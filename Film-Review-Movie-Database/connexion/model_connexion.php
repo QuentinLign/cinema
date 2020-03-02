@@ -1,17 +1,13 @@
 <?php
 class model_inscription
 {
-  protected id;
   protected login;
   protected mdp;
   public function __construct($login,$mdp)
   {
             $this->mdp = $mdp;
             $this->login = $login;
-        }
-
-
-
+  }
     public function getmdp($mdp)
     {
         return $mdp;
@@ -20,9 +16,18 @@ class model_inscription
     {
         return $login;
     }
-  
-    public function getid($id)
+
+
+    public function setlogin ($login)
     {
-        return $id;
+    if(is_string($login))
+    {
+      $this->_login=$login;
+    }
+    public function setmdp ($mdp)
+    {
+    if(is_string($mdp))
+    {
+      $this->_mdp=$mdp;
     }
 ?>
