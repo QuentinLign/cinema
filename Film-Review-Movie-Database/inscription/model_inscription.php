@@ -1,5 +1,5 @@
 <?php
-class model_inscription
+class model_connexion
 {
   protected id;
   protected nom;
