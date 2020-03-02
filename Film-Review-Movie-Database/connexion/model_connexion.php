@@ -12,10 +12,12 @@ class model_inscription
     {
         return $mdp;
     }
+  }
     public function getlogin($login)
     {
         return $login;
     }
+  }
 
 
     public function setlogin ($login)
@@ -24,6 +26,7 @@ class model_inscription
     {
       $this->_login=$login;
     }
+  }
     public function setmdp ($mdp)
     {
     if(is_string($mdp))
