@@ -1,5 +1,5 @@
 <?php
-class model
+class model_inscription
 {
   protected nom;
   protected email;
@@ -7,6 +7,15 @@ class model
   protected login;
   protected prenom;
   protected id;
+  public function __construct($nom, $email,$mdp,$login,$prenom,$id)
+  {
+            $this->nom = $nom;
+            $this->email = $email;
+            $this->mdp = $mdp;
+            $this->login = $login;
+            $this->prenom = $prenom;
+            $this->id = $id;
+        }
 
     public function getnom($nom)
     {
