@@ -1,13 +1,14 @@
 <?php
 class model_inscription
 {
+  protected id;
   protected nom;
   protected email;
   protected mdp;
   protected login;
   protected prenom;
-  protected id;
-  public function __construct($nom, $email,$mdp,$login,$prenom,$id)
+  protected telephone;
+  public function __construct($nom, $email,$mdp,$login,$prenom,$id,$telephone)
   {
             $this->nom = $nom;
             $this->email = $email;
@@ -15,6 +16,7 @@ class model_inscription
             $this->login = $login;
             $this->prenom = $prenom;
             $this->id = $id;
+            $this->telephone = $telephone;
         }
 
     public function getnom($nom)
