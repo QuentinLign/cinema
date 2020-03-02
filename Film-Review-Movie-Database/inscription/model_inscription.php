@@ -43,4 +43,46 @@ class model_connexion
     {
         return $id;
     }
+    public function setnom ($nom)
+    {
+    if(is_string($nom))
+    {
+      $this->_nom=$nom;
+    }
+    public function setemail ($email)
+    {
+    if(is_string($email))
+    {
+      $this->_email=$email;
+    }
+    public function setmdp ($mdp)
+    {
+    if(is_string($mdp))
+    {
+      $this->_mdp=$mdp;
+    }
+    public function setlogin ($login)
+    {
+    if(is_string($login))
+    {
+      $this->_login=$login;
+    }
+    public function setprenom ($prenom)
+    {
+    if(is_string($prenom))
+    {
+      $this->_prenom=$prenom;
+    }
+    public function setid ($id)
+    {
+    if(is_string($id))
+    {
+      $this->_id=$id;
+    }
+    public function settelephone ($telephone)
+    {
+    if(is_string($telephone))
+    {
+      $this->_telephone=$telephone;
+    }
 ?>
