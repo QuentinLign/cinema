@@ -1,6 +1,13 @@
 <?php
 class model
 {
+  protected nom;
+  protected email;
+  protected mdp;
+  protected login;
+  protected prenom;
+  protected nom;
+  protected id;
     public function getPosts()
     {
         $db = $this->dbConnect();
