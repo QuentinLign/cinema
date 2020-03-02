@@ -6,18 +6,30 @@ class model
   protected mdp;
   protected login;
   protected prenom;
-  protected nom;
   protected id;
-    public function getPosts()
-    {
-        $db = $this->dbConnect();
-        $req = $db->query('SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 0, 5');
 
-        return $req;
+    public function getnom($nom)
+    {
+        return $nom;
     }
-
-    public function getPost($postId)
+    public function getemail($email)
     {
-        return $post;
+        return $email;
+    }
+    public function getmdp($mdp)
+    {
+        return $mdp;
+    }
+    public function getlogin($login)
+    {
+        return $login;
+    }
+    public function getprenom($prenom)
+    {
+        return $prenom;
+    }
+    public function getid($id)
+    {
+        return $id;
     }
 ?>
