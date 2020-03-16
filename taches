@@ -1,10 +1,7 @@
 TACHES A EFFECTUER :
-LUNDI 16 MARS 2020 :
-Amine --> Modifications code source HTML du site dans son intégralité (traductions en français des pages, suppressions de certaines pages). Garder la partie "Community" du site et garder la page "Movie Single" dans la catégorie Movies
-Quentin --> Envoi de mail sur le formulaire d'inscription
 
 remarques: il faut faire un affichage en php pour afficher les films disponibles et on mettra les dates sous forme de varchar et pas l'atribut date par defaut sur sql
 
 MARDI 17 MARS 2020 :
-Amine --> Formulaire de modification d'utilisateur (voir la catégorie "Community, page -> User Profile" du site internet + Commencer la création d'une page dédié aux commentaires pour les films (formulaire ajout commentaire)
-Quentin --> Visibilité des dernières réservations effectué avec le compte (nb place et choix 3D)
+Amine --> Finaliser modifications,suppressions HTML de l'intégralite du site internet + COMMENCER le Formulaire de modification d'utilisateur (voir la catégorie "Community, page -> User Profile" du site 
+Quentin --> Envoi mail via formulaire inscription + COMMENCER la Visibilité des dernières réservations effectué avec le compte (nb place et choix 3D)
