@@ -3,20 +3,19 @@ class model_connexion
 {
   protected id;
   protected nom;
-  protected email;
-  protected mdp;
-  protected login;
   protected prenom;
-  protected telephone;
-  public function __construct($nom, $email,$mdp,$login,$prenom,$id,$telephone)
+  protected mail;
+  protected login;
+  protected mdp;
+  protected role;
+  public function __construct($nom, $prenom,$mail,$login,$mdp,$role)
   {
             $this->nom = $nom;
-            $this->email = $email;
-            $this->mdp = $mdp;
-            $this->login = $login;
             $this->prenom = $prenom;
-            $this->id = $id;
-            $this->telephone = $telephone;
+            $this->mail = $mail;
+            $this->login = $login;
+            $this->mdp = $mdp;
+            $this->role = $role;
         }
 
     public function getnom($nom)
@@ -24,14 +23,14 @@ class model_connexion
         return $nom;
     }
   }
-    public function getemail($email)
+ public function getprenom($prenom)
     {
-        return $email;
+        return $prenom;
     }
   }
-    public function getmdp($mdp)
+    public function getmail($mail)
     {
-        return $mdp;
+        return $mail;
     }
   }
     public function getlogin($login)
@@ -39,42 +38,22 @@ class model_connexion
         return $login;
     }
   }
-    public function getprenom($prenom)
+    public function getmdp($mdp)
     {
-        return $prenom;
+        return $mdp;
     }
   }
-    public function getid($id)
+    public function getrole($role)
     {
-        return $id;
+        return $role;
     }
   }
+   
     public function setnom ($nom)
     {
     if(is_string($nom))
     {
       $this->_nom=$nom;
-    }
-  }
-    public function setemail ($email)
-    {
-    if(is_string($email))
-    {
-      $this->_email=$email;
-    }
-  }
-    public function setmdp ($mdp)
-    {
-    if(is_string($mdp))
-    {
-      $this->_mdp=$mdp;
-    }
-  }
-    public function setlogin ($login)
-    {
-    if(is_string($login))
-    {
-      $this->_login=$login;
     }
   }
     public function setprenom ($prenom)
@@ -84,18 +63,33 @@ class model_connexion
       $this->_prenom=$prenom;
     }
   }
-    public function setid ($id)
+    public function setmail ($mail)
     {
-    if(is_string($id))
+    if(is_string($mail))
     {
-      $this->_id=$id;
+      $this->_mdp=$mail;
     }
   }
-    public function settelephone ($telephone)
+    public function setlogin ($login)
     {
-    if(is_string($telephone))
+    if(is_string($login))
     {
-      $this->_telephone=$telephone;
+      $this->_login=$login;
     }
   }
+    public function setmdp ($mdp)
+    {
+    if(is_string($mdp))
+    {
+      $this->_mdp=$mdp;
+    }
+  }
+    public function setrole ($role)
+    {
+    if(is_string($role))
+    {
+      $this->_role=$role;
+    }
+  }
+   
 ?>
