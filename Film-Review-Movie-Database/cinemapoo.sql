@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 17 mars 2020 à 09:30
+-- Généré le :  mar. 17 mars 2020 à 10:29
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(30) COLLATE utf8_bin NOT NULL,
   `email` varchar(30) COLLATE utf8_bin NOT NULL,
-  `telephone` varchar(20) COLLATE utf8_bin NOT NULL,
+  `telephone` varchar(15) COLLATE utf8_bin NOT NULL,
   `mdp` varchar(20) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
