@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 17 mars 2020 à 07:26
+-- Généré le :  mar. 17 mars 2020 à 07:30
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -21,28 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `cinemapoo`
 --
-
--- --------------------------------------------------------
-
---
--- Structure de la table `administrateurs`
---
-
-DROP TABLE IF EXISTS `administrateurs`;
-CREATE TABLE IF NOT EXISTS `administrateurs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `login` varchar(20) COLLATE utf8_bin NOT NULL,
-  `mdp` varchar(20) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Déchargement des données de la table `administrateurs`
---
-
-INSERT INTO `administrateurs` (`id`, `login`, `mdp`) VALUES
-(1, 'LIGNANI', 'test'),
-(2, 'NACKIL', 'test');
 
 -- --------------------------------------------------------
 
