@@ -1,95 +1,63 @@
 <?php
-class model_connexion
-{
-  protected id;
-  protected nom;
-  protected prenom;
-  protected mail;
-  protected login;
-  protected mdp;
-  protected role;
-  public function __construct($nom, $prenom,$mail,$login,$mdp,$role)
-  {
-            $this->nom = $nom;
-            $this->prenom = $prenom;
-            $this->mail = $mail;
-            $this->login = $login;
-            $this->mdp = $mdp;
-            $this->role = $role;
-        }
+class inscription { //Déclaration de la classe inscription
+//Déclaration des attributs
+  private $_nom;
+  private $_email;
+  private $_telephone;
+    private $_mdp;
 
-    public function getnom($nom)
-    {
-        return $nom;
-    }
+  public function __construct($nom, $email, $mdp, $telephone){
+//Partie SET
+      $this->setNom($nom);
+      $this->setemail($email);
+	  $this->settelephone($telephone);
+      $this->setmdp($mdp);
+
+}
+
+public function setnom($nom){
+  if(empty($nom)){
+    trigger_error('la variable doit etre un caractere');
+    return;
   }
- public function getprenom($prenom)
-    {
-        return $prenom;
-    }
+  $this->_nom = $nom;
+}
+public function setemail($email){
+  if(empty($email)){
+    trigger_error('la variable doit etre un caractere');
+    return;
   }
-    public function getmail($mail)
-    {
-        return $mail;
-    }
+  $this->_email = $email;
+}
+public function settelephone($telephone){
+  if(empty($telephone)){
+    trigger_error('la variable doit etre un caractere');
+    return;
   }
-    public function getlogin($login)
-    {
-        return $login;
-    }
+  $this->_telephone = $telephone;
+}
+public function setmdp($mdp){
+  if(empty($mdp)){
+    trigger_error('la variable doit etre un caractere');
+    return;
   }
-    public function getmdp($mdp)
-    {
-        return $mdp;
-    }
-  }
-    public function getrole($role)
-    {
-        return $role;
-    }
-  }
-   
-    public function setnom ($nom)
-    {
-    if(is_string($nom))
-    {
-      $this->_nom=$nom;
-    }
-  }
-    public function setprenom ($prenom)
-    {
-    if(is_string($prenom))
-    {
-      $this->_prenom=$prenom;
-    }
-  }
-    public function setmail ($mail)
-    {
-    if(is_string($mail))
-    {
-      $this->_mdp=$mail;
-    }
-  }
-    public function setlogin ($login)
-    {
-    if(is_string($login))
-    {
-      $this->_login=$login;
-    }
-  }
-    public function setmdp ($mdp)
-    {
-    if(is_string($mdp))
-    {
-      $this->_mdp=$mdp;
-    }
-  }
-    public function setrole ($role)
-    {
-    if(is_string($role))
-    {
-      $this->_role=$role;
-    }
-  }
-   
+  $this->_mdp = $mdp;
+}
+
+//Partie Get
+public function getnom(){
+  return $this->_nom;
+}
+public function getemail(){
+  return $this->_email;
+}
+public function gettelephone(){
+  return $this->_telephone;
+
+}
+public function getmdp(){
+  return $this->_mdp;
+}
+
+}
 ?>

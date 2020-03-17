@@ -5,11 +5,11 @@ class Manager{ //Déclaration de la classe Manager
 public function inscription($donnee){
 
       $bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', ''); //Connexion à la BDD
-    $req=$bdd->prepare('INSERT into utilisateurs (nom, prenom, mail, login, mdp, role) VALUES(:nom, :prenom, :mail, :login, :mdp, :role)'); //Préparation de la table inscription avec les valeurs de la table
-    $req->execute(array('nom'=>$donnee->getnom(),'prenom'=>$donnee->getprenom(), 'mail'=>$donnee->getmail(),'login'=>$donnee->getlogin(), 'mdp'=>md5($donnee->getmdp(), 'role'=>$donnee->getrole()))); //Execution des requêtes
-    $resultat = $req->fetch();
+    $req=$bdd->prepare('INSERT into utilisateurs (nom, email, telephone, mdp) VALUES(:nom, :email, :telephone, :mdp)'); //Préparation de la table inscription avec les valeurs de la table
+    $req->execute(array('nom'=>$donnee->getnom(),'email'=>$donnee->getemail(), 'telephone'=>$donnee->gettelephone(), 'mdp'=>md5($donnee->getmdp()))); //Execution des requêtes
+    $a = $req->fetch();
 	//Conditions de redirection
-    if ($resultat ==true){
+    if ($a ==true){
       header("location: index.php");
     }
     else{
