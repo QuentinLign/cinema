@@ -2,7 +2,7 @@ TACHES A EFFECTUER :
 
 remarques: il faut faire un affichage en php pour afficher les films disponibles et on mettra les dates sous forme de varchar et pas l'atribut date par defaut sur sql
 
-MARDI 17 MARS 2020 :
+MARDI 23 MARS 2020 :
 Amine --> Finaliser modifications,suppressions HTML de l'intégralite du site internet + COMMENCER le Formulaire de modification d'utilisateur (voir la catégorie "Community, page -> User Profile" du site 
 Quentin --> Envoi mail via formulaire inscription + COMMENCER la Visibilité des dernières réservations effectué avec le compte (nb place et choix 3D)
 JE M'OCCUPE DE LA BDD DES DEMAIN MATIN 
