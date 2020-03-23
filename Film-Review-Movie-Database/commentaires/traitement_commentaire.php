@@ -1,7 +1,7 @@
 <?php
-require_once 'model_inscription.php';
-require_once 'manager_inscription.php';
-$inscription = new inscription($_POST["nom"], $_POST["email"], $_POST["mdp"], $_POST["telephone"]);
+require_once 'model_commentaire.php';
+require_once 'manager_commentaire.php';
+$commentaire = new commentaire($_POST["id"], $_POST["nom"], $_POST["commentaire"]);
 $co = new Manager();
-$co->inscription($inscription);
+$co->commentaire($commentaire);
 ?>
