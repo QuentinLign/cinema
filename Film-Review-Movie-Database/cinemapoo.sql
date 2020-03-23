@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 -- Structure de la table `reservations`
 --
 
-DROP TABLE IF EXISTS `reservations`;
-CREATE TABLE IF NOT EXISTS `reservations` (
+DROP TABLE IF EXISTS `reservations`; /* supprimer la table reservation s'il existe*/
+CREATE TABLE IF NOT EXISTS `reservations` ( /*on fonde la table reservation on y insérant les colonnes id, login, film, nb_places,paiement*/
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(20) COLLATE utf8_bin NOT NULL,
   `film` varchar(40) COLLATE utf8_bin NOT NULL,
@@ -44,22 +44,22 @@ CREATE TABLE IF NOT EXISTS `reservations` (
 -- Structure de la table `utilisateurs`
 --
 
-DROP TABLE IF EXISTS `utilisateurs`;
-CREATE TABLE IF NOT EXISTS `utilisateurs` (
+DROP TABLE IF EXISTS `utilisateurs`; /* On supprime la table uttilisateur s'il existe*/
+CREATE TABLE IF NOT EXISTS `utilisateurs` ( /*on fonde la table uttilisateur et on y ajoute les colones id, nom, email, telephone, mdp*/
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(30) COLLATE utf8_bin NOT NULL,
   `email` varchar(30) COLLATE utf8_bin NOT NULL,
   `telephone` varchar(15) COLLATE utf8_bin NOT NULL,
   `mdp` varchar(100) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`) /*on met une clé primaire sur id*/
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id`, `nom`, `email`, `telephone`, `mdp`) VALUES
-(1, 'test', 'qlignani@gmail.com', '097', '202cb962ac59075b964b07152d234b70'),
+INSERT INTO `utilisateurs` (`id`, `nom`, `email`, `telephone`, `mdp`) VALUES /*on insère des uttilisateurs*/
+(1, 'test', 'nakhila@orange.fr', '097', '202cb962ac59075b964b07152d234b70'),
 (2, 'Miami', 'miami@gmail.com', '098765', '7d74f6896e07adce917c12a416944b0e');
 COMMIT;
 
