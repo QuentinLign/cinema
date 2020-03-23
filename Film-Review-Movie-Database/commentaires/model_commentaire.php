@@ -1,62 +1,52 @@
 <?php
-require_once 'manager_inscription.php';
-require_once 'traitement_inscription.php';
+require_once 'manager_commentaire.php';
+require_once 'traitement_commentaire.php';
 class inscription { //Déclaration de la classe inscription
 //Déclaration des attributs
-  private $_nom;
-  private $_email;
-  private $_mdp;
-  private $_telephone;
+  protected $_id;
+  protected $_nom;
+  protected $_commentaire;
 
-  public function __construct($nom, $email, $mdp, $telephone){
+  public function __construct($id, $nom, $commentaire){
 //Partie SET
-      $this->setNom($nom);
-      $this->setemail($email);
-      $this->setmdp($mdp);
-      $this->settelephone($telephone);
+      $this->setid($id);
+      $this->setnom($nom);
+      $this->setcommentaire($commentaire);
+      $this->setcommentaire($commentaire);
 }
 
-public function setnom($nom){
+public function setid($id){
+  if(empty($id)){
+    trigger_error('la variable doit etre remplie');
+    return;
+  }
+  $this->_id = $id;
+}
+public function setemail($nom){
   if(empty($nom)){
-    trigger_error('la variable doit etre un caractere');
+    trigger_error('la variable doit etre remplie');
     return;
   }
   $this->_nom = $nom;
 }
-public function setemail($email){
-  if(empty($email)){
-    trigger_error('la variable doit etre un caractere');
+public function setcommentaire($commentaire){
+  if(empty($commentaire)){
+    trigger_error('la variable doit etre remplie');
     return;
   }
-  $this->_email = $email;
+  $this->_commentaire = $commentaire;
 }
-public function setmdp($mdp){
-  if(empty($mdp)){
-    trigger_error('la variable doit etre un caractere');
-    return;
-  }
-  $this->_mdp = $mdp;
-}
-public function settelephone($telephone){
-  if(empty($telephone)){
-    trigger_error('la variable doit etre un caractere');
-    return;
-  }
-  $this->_telephone = $telephone;
-}
+
 //Partie Get
+public function getid(){
+  return $this->_id;
+}
 public function getnom(){
   return $this->_nom;
 }
-public function getemail(){
-  return $this->_email;
+public function getcommentaire(){
+  return $this->_commentaire;
 }
-public function getmdp(){
-  return $this->_mdp;
-}
-public function gettelephone(){
-  return $this->_telephone;
 
-}
 }
 ?>
