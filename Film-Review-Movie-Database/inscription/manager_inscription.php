@@ -13,7 +13,7 @@ public function inscription($donnee){
      header("location: index.php");
     }
     else{
-     header("location: ../Connexion/connexion.php");
+     header("location: mail.php"); //Redirection vers mail.php
     }
 
           }
