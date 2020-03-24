@@ -361,7 +361,13 @@
 											</div>
 											<!-- movie user review -->
 											<div class="mv-user-review-item">
-												<h3></h3>
+												<h3><?php
+													$pdo = new PDO('mysql:host=localhost;dbname=cinemapoo','root','');
+													$reponse = $pdo->prepare('SELECT titre FROM commentaire WHERE titre= :titre');
+													$reponse->execute(array('titre'=>$titre));
+													$donne = $reponse->fetch()
+													echo $donne;
+													?></h3>
 												<div class="no-star">
 													<i class="ion-android-star"></i>
 													<i class="ion-android-star"></i>
