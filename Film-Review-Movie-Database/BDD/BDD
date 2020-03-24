@@ -70,6 +70,14 @@ INSERT INTO `utilisateurs` (`id`, `nom`, `email`, `telephone`, `mdp`) VALUES
 (8, 'qq', 'qlignani@gmail.com', '099', '81dc9bdb52d04dc20036dbd8313ed055');
 COMMIT;
 
+CREATE TABLE commentaire
+(
+    id INT PRIMARY KEY NOT NULL
+    titre VARCHAR 100,
+    internaute varchar 30,
+    avis TEXT,
+)
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
