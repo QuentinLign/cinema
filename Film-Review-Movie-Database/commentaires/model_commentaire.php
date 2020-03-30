@@ -7,7 +7,7 @@ class inscription { //Déclaration de la classe inscription
   protected $_commentaire;
 
   public function __construct($nom, $commentaire){
-//Partie SET
+//Partie setter
       $this->setnom($nom);
       $this->setcommentaire($commentaire);
       $this->setcommentaire($commentaire);
@@ -29,7 +29,7 @@ public function setcommentaire($commentaire){
   $this->_commentaire = $commentaire;
 }
 
-//Partie Get
+//Partie Getter
 
 public function getnom(){
   return $this->_nom;
