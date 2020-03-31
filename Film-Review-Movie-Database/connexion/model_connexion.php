@@ -1,30 +1,30 @@
 <?php
 class model_inscription
 {
-  protected login;
+  protected email;
   protected mdp;
-  public function __construct($login,$mdp)
+  public function __construct($email,$mdp)
   {
             $this->mdp = $mdp;
-            $this->login = $login;
+            $this->email = $email;
   }
     public function getmdp($mdp)
     {
         return $mdp;
     }
   }
-    public function getlogin($login)
+    public function getlogin($email)
     {
-        return $login;
+        return $email;
     }
   }
 
 
-    public function setlogin ($login)
+    public function setemail ($email)
     {
-    if(is_string($login))
+    if(is_string($email))
     {
-      $this->_login=$login;
+      $this->_email=$email;
     }
   }
     public function setmdp ($mdp)
