@@ -1,7 +1,7 @@
 <?php
 require_once 'manager_commentaire.php';
 require_once 'traitement_commentaire.php';
-class inscription { //Déclaration de la classe inscription
+class model_commentaire { //Déclaration de la classe inscription
 //Déclaration des attributs
   protected $_nom;
   protected $_commentaire;
