@@ -1,5 +1,5 @@
 <?php
-$connexion = new connexion($_POST["login"],$_POST["mdp"]);
+$connexion = new connexion($_POST["email"],$_POST["mdp"]);
 $co = new Manager();
 $co->connexion($connexion);
 
