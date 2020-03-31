@@ -5,18 +5,18 @@ class Manager{ //Déclaration de la classe Manager
 public function connexion($donnee){
 //Connexion à la BDD
       $bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', '');
-    $req=$bdd->prepare('SELECT * from inscription where login = :login and mdp = :mdp');
-    $req->execute(array('login'=>$donnee->getlogin(), 'mdp'=>$donnee->getmdp()));
+    $req=$bdd->prepare('SELECT * from utilisateurs where email = :email and mdp = :mdp');
+    $req->execute(array('email'=>$donnee->getemail(), 'mdp'=>$donnee->getmdp()));
     $co = $req->fetch();
-	$_SESSION['login'] = $donnee->getlogin();
+	$_SESSION['email'] = $donnee->getemail();
 	$_SESSION['mdp'] = $donnee->getmdp();
 
   if ($co == true){
 	
-    header("location: moncompte.php");
+    header("location: index.php");
   }
   else{
-    header("location: welcome.php");
+    header("location: index.php");
   }
 }
 
