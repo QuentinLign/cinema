@@ -220,7 +220,7 @@
 				</div>
 			</div>
 			<div>
-				<form action="/commentaires/manager_commentaire.php" method="post">
+				<form action="../Film-Review-Movie-Database/commentaires/manager_commentaire.php" method="post">
 					<input type="text" id="nom" name="nom" required
 					       minlength="2" maxlength="4" size="5" placeholder="Nom">
 								 <input type="text" id="commentaire" name="commentaire" required
@@ -277,7 +277,7 @@
 	</div>
 	<div class="ft-copyright">
 		<div class="ft-left">
-			<p><a target="_blank" href="https://quentin-lignani.fr/">Amine & Quentin SARL</a></p>
+			<p><a target="_blank" href="https://quentin-lignani.fr/">Amine & Quentin S.A.R.L</a></p>
 		</div>
 		<div class="backtotop">
 			<p><a href="#" id="back-to-top">Retour en haut  <i class="ion-ios-arrow-thin-up"></i></a></p>
