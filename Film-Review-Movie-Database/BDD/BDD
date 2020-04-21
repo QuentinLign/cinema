@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `reservations` (
   `nbplaces` int(20) NOT NULL,
   `paiement` varchar(30) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin; /*on fonde une table reservation dans laquelles on entre les colonnes id, login, mail, film; nbplaces,paiment */;
 
 -- --------------------------------------------------------
 
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `mdp` varchar(100) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
+/*on fonde une table uttilisateur dans laquelle on met les colonnes id, nom, email, telephone, mdp */;
 --
 -- Déchargement des données de la table `utilisateurs`
 --
