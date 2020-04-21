@@ -34,13 +34,13 @@
 			<li><a href="account.php">Mon profil</a></li>
 						<li><a href="#">Mes reservations</a></li>
 <li><a href="reservation.php">JE RESERVE</a></li>
-		<li><a href="account.php">Retourner sur le site</a></li>
+		<li><a href="http://localhost/Film-Review-Movie-Database">Retourner sur le site</a></li>
                     <li><a href="logout.php">Se déconnecter</a></li>
 
                 <?php else: ?>  
                     <li><a href="register.php">S'inscrire</a></li>
                     <li><a href="login.php">Se connecter</a></li>
-		<li><a href="account.php">Retourner sur le site</a></li>
+		<li><a href="http://localhost/Film-Review-Movie-Database">Retourner sur le site</a></li>
 
                 <?php endif; ?>
             </ul>
