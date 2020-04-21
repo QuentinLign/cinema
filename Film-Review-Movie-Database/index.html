@@ -43,33 +43,11 @@
 <div class="login-wrapper" id="login-content">
     <div class="login-content">
         <a href="#" class="close">x</a>
-        <h3>Connexion</h3>
-        <form method="post" action="#">
-        	<div class="row">
-        		 <label for="username">
-                    Email d'utilisateur:
-                    <input type="email" name="email" id="username" placeholder="ex:Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                </label>
-        	</div>
-
-            <div class="row">
-            	<label for="password">
-                    Mot de passe:
-                    <input type="password" name="mdp" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-            <div class="row">
-            	<div class="remember">
-					<div>
-						<input type="checkbox" name="remember" value="Remember me"><span>Se souvenir de moi</span>
-					</div>
-            		<a href="#">Mot de passe Oublié ?</a>
-            	</div>
-            </div>
+        <h3>Connexion</h3>        	
            <div class="row">
-           	 <button type="submit">Connexion</button>
-           </div>
-        </form>
+<form action="/membre/login.php">
+         <button type="submit">Je me connecte</button>
+      </form>           </div>
         <div class="row">
         	<p>Ou par réseau social</p>
             <div class="social-btn-2">
@@ -85,36 +63,10 @@
     <div class="login-content">
         <a href="#" class="close">x</a>
         <h3>Inscriptions</h3>
-        <form method="post" action="/cinema-master/Film-Review-Movie-Database/inscription/traitement_inscription.php">
-            <div class="row">
-                 <label for="username-2">
-                    Nom :
-                    <input type="text" name="nom" id="username-2" placeholder="Hugh Jackman"  required="required" />
-                </label>
-            </div>
-
-            <div class="row">
-                <label for="email-2">
-                    Votre mail:
-                    <input type="email" name="email" id="email-2" placeholder=""  required="required" />
-                </label>
-            </div>
-             <div class="row">
-                <label for="password-2">
-                    Téléphone
-                    <input type="tel" name="telephone" id="password-2" placeholder="" required="required" />
-                </label>
-            </div>
-             <div class="row">
-                <label for="repassword-2">
-                    Mot de passe
-                    <input type="password" name="mdp" id="repassword-2" placeholder=""  required="required" />
-                </label>
-            </div>
-           <div class="row">
-             <button type="submit">Inscriptions</button>
-           </div>
-        </form>
+<div class="row">
+<form action="/membre/register.php">
+         <button type="submit">Je m'inscris</button>
+      </form>           </div>
     </div>
 </div>
 <!--fin du popup d'inscription-->
@@ -178,8 +130,8 @@
 					<ul class="nav navbar-nav flex-child-menu menu-right">
 
 						<li><a href="#">Aide</a></li>
-						<li class="loginLink"><a href="#">S'inscrire</a></li>
-						<li class="btn signupLink"><a href="#">Se connecter</a></li>
+						<li class="loginLink"><a href="#">Espace client</a></li>
+						<li class="btn signupLink"><a href="#">Inscription</a></li>
 					</ul>
 				</div>
 			<!-- /.navbar-collapse -->
