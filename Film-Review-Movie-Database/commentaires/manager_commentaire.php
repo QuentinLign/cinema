@@ -19,7 +19,7 @@ public function commentaire($donnee)
      header("location: index.html"); //Redirection vers index.html
     }
 
-          }
+    }
 }
 
 ?>
