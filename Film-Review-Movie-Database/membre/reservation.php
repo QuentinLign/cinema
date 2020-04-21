@@ -31,3 +31,4 @@ require 'inc/bootstrap.php';?>
 </form>
 
 <?php require 'inc/footer.php'; ?>
+  <script> window.alert("Page en construction"); </script>
