@@ -3,39 +3,39 @@ require_once 'manager_commentaire.php';
 require_once 'traitement_commentaire.php';
 class model_commentaire { //Déclaration de la classe inscription
 //Déclaration des attributs
-  protected $_nom;
-  protected $_commentaire;
+  protected $_Avis;
+  protected $_Note;
 
-  public function __construct($nom, $commentaire){
+  public function __construct($Avis, $Note)
+  {
 //Partie setter
-      $this->setnom($nom);
-      $this->setcommentaire($commentaire);
-      $this->setcommentaire($commentaire);
+      $this->setAvis($Avis);
+      $this->setNote($Note);
 }
 
 
-public function setemail($nom){
-  if(empty($nom)){
+public function setemail($Avis){
+  if(empty($Avis)){
     trigger_error('la variable doit etre remplie');
     return;
   }
-  $this->_nom = $nom;
+  $this->_Avis = $Avis;
 }
-public function setcommentaire($commentaire){
-  if(empty($commentaire)){
+public function setNote($Note){
+  if(empty($Note)){
     trigger_error('la variable doit etre remplie');
     return;
   }
-  $this->_commentaire = $commentaire;
+  $this->_Note = $Note;
 }
 
 //Partie Getter
 
-public function getnom(){
-  return $this->_nom;
+public function getAvis(){
+  return $this->_Avis;
 }
-public function getcommentaire(){
-  return $this->_commentaire;
+public function getNote(){
+  return $this->_Note;
 }
 
 }

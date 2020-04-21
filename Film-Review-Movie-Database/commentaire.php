@@ -221,9 +221,9 @@
 			</div>
 			<div>
 				<form action="../Film-Review-Movie-Database/commentaires/manager_commentaire.php" method="post">
-					<input type="text" id="nom" name="nom" required
+					<input type="text" id="nom" name="Avis" required
 					       minlength="2" maxlength="4" size="5" placeholder="Nom">
-								 <input type="text" id="commentaire" name="commentaire" required
+								 <input type="text" id="commentaire" name="Note" required
        	 minlength="2" maxlength="4" size="5" placeholder="Avis">
 				 <input type="submit" id="envoi" name="envoi" required
  minlength="2" maxlength="4" size="5">
