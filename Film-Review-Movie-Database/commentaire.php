@@ -222,11 +222,11 @@
 			<div>
 				<form action="../Film-Review-Movie-Database/commentaires/manager_commentaire.php" method="post">
 					<input type="text" id="nom" name="Avis" required
-					       minlength="2" maxlength="4" size="5" placeholder="Nom">
+					       minlength="1" maxlength="2" size="3" placeholder="Nom">
 								 <input type="text" id="commentaire" name="Note" required
-       	 minlength="2" maxlength="4" size="5" placeholder="Avis">
+       	 minlength="1" maxlength="2" size="3" placeholder="Avis">
 				 <input type="submit" id="envoi" name="envoi" required
- minlength="2" maxlength="4" size="5">
+ minlength="1" maxlength="2" size="3">
 
 					</form>
 				</div>
