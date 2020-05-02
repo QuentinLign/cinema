@@ -2,12 +2,12 @@ TACHES A EFFECTUER :
 
 remarques: il faut faire un affichage en php pour afficher les films disponibles et on mettra les dates sous forme de varchar et pas l'atribut date par defaut sur sql
 
-MARDI 14 AVRIL AU DIMANCHE 19 AVRIL :
+FINALISATION DU PROJET POO CINEMA :
 
-Amine --> FINIR la partie "Commentaire sur les films" + Finir la partie HTML du site
-Quentin --> Partie espace client : modification utilisateur + affichage des réservations
+Amine --> FINIR la partie "Commentaire sur les films" + Finir la partie HTML du site + Faire les commentaires sur tous les fichier vue
+Quentin --> Faire espace administrateur + Mission 5 et documentation + commentaires sur tous les fichiers de l'espace client et administrateur
 
-MISSION : Finir la Mission 3.
+MISSION : Tout finir
 
 
 incorporer la page d'avis dans la page comminsoon
