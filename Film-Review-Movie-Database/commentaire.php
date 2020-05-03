@@ -290,6 +290,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/plugins2.js"></script>
 <script src="js/custom.js"></script>
+<!-- fichiers javascipt-->
 </body>
 
 <!-- userprofile14:04-->
