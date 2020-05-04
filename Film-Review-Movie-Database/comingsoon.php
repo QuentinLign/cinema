@@ -47,7 +47,7 @@
         <form method="post" action="#">
         	<div class="row">
         		 <label for="username">
-                    Nom d'uttilisateur:
+                    Nom d'utilisateur:
                     <input type="text" name="username" id="username" placeholder="ex:Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
                 </label>
         	</div>
