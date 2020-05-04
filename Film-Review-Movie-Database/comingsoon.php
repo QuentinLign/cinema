@@ -123,8 +123,8 @@
 		<div class="row ipad-width">
 			<div class="left-content">
 				<a href="index.html"><img class="md-logo" src="images/logo1.png" alt=""></a>
-				<h1>Evènements à venir</h1>
-				<p>Nous travaillons dur pour vous recontacter</p>
+				<h1>Donnez votre avis</h1>
+				<p>Cela  est important pour nourir le débat et l'enrichir</p>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<div class="coming-ct">
@@ -152,9 +152,9 @@
 						</div>
 						<h3>Donnez votre Avis</h3>
 						<form action="#">
-							<input class="email" id="nom" type="text" name="Avis" placeholder="Avis" required>
-							<input class="email" id="commentaire"name="Note" required type="text" placeholder="Note">
-							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="abonnement">
+							<input class="email" id="nom" type="text" name="Avis" placeholder="Nom" required>
+							<input class="email" id="commentaire"name="Note" required type="text" placeholder="Avis">
+							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="envoi">
 						</form>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
