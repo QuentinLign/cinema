@@ -127,31 +127,8 @@
 				<p>Cela  est important pour nourir le débat et l'enrichir</p>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<div class="coming-ct">
-							<div id="clockdiv" class="time">
-								<div class="it-time">
-									<span class="days"></span><br>
-									<p>Jours</p>
-								</div>
-
-								<div class="it-time">
-									<span class="hours"></span><br>
-									<p>heures</p>
-								</div>
-								<div class="it-time">
-									<span class="minutes">
-									</span><br>
-									<p>Minutes</p>
-								</div>
-								<div class="it-time">
-									<span class="seconds">
-									</span><br>
-									<p>Secondes</p>
-								</div>
-							</div>
-						</div>
 						<h3>Donnez votre Avis</h3>
-						<form action="#">
+						<form action="../Film-Review-Movie-Database/commentaires/manager_commentaire.php" method="post">
 							<input class="email" id="nom" type="text" name="Avis" placeholder="Nom" required>
 							<input class="email" id="commentaire"name="Note" required type="text" placeholder="Avis">
 							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="envoi">
