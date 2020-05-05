@@ -124,7 +124,7 @@
 			<div class="left-content">
 				<a href="index.html"><img class="md-logo" src="images/logo1.png" alt=""></a>
 				<h1>Donnez votre avis</h1>
-				<p>Cela  est important pour nourir le débat et l'enrichir</p>
+				<p>Cela  est important pour nourrir le débat et l'enrichir</p>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<h3>Donnez votre Avis</h3>
@@ -133,6 +133,9 @@
 							<input class="email" id="commentaire"name="Note" required type="text" placeholder="Avis">
 							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="envoi">
 						</form>
+						<? // Récupération des commentaires et leur affichage
+						 echo "Nous sommes en $MaDate";
+						 ?>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<img class="cm-img" src="images/uploads/cm-img.png" alt="">
