@@ -134,7 +134,11 @@
 							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="envoi">
 						</form>
 						<? // Récupération des commentaires et leur affichage
-						 echo "Nous sommes en $MaDate";
+
+									$bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', ''); //Connexion à la BDD
+								$req=$bdd->prepare('INSERT into utilisateurs (nom, email, telephone, mdp) VALUES(:nom, :email, :telephone, :mdp)'); //Préparation de la table inscription avec les valeurs de la table
+								$req->execute(array('nom'=>$donnee->getnom(),'email'=>$donnee->getemail(), 'telephone'=>$donnee->gettelephone(), 'mdp'=>md5($donnee->getmdp()))); //Execution des requêtes
+								$a = $req->fetch();
 						 ?>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
