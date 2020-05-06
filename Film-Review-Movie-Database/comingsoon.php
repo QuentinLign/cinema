@@ -27,6 +27,7 @@
 	<!-- fichiers CSS -->
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/commentaires.css">
 
 </head>
 <body>
@@ -133,14 +134,43 @@
 							<input class="email" id="commentaire" name="Note" required type="text" placeholder="Avis">
 							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="envoi">
 						</form>
-						<? // Récupération des commentaires et leur affichage
 
-								$bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', ''); //Connexion à la BDD
-								$req=$bdd->prepare('SELECT Nom and Avis FROM commentaires WHERE page="comingsoon" ORDER BY date'); //Préparation de la table inscription avec les valeurs de la table
-								$req->execute(array('Nom'=>$Nom,'Avis'=>$Avis)); //Execution des requêtes
-								$a = $req->fetch();
+<?php
+// Connexion à la base de données
+try
+{
+ $bdd = new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+			 die('Erreur : '.$e->getMessage());
+}
 
-						 ?>
+// On récupère les 5 derniers billets
+$req = $bdd->query('SELECT id, titre, contenu, DATE_FORMAT(date_creation, \'%d/%m/%Y à %Hh%imin%ss\') AS date_creation_fr FROM billets ORDER BY date_creation DESC LIMIT 0, 5');
+
+while ($donnees = $req->fetch())
+{
+?>
+<div class="news">
+	 <h3>
+			 <?php echo htmlspecialchars($donnees['titre']); ?>
+			 <em>le <?php echo $donnees['date_creation_fr']; ?></em>
+	 </h3>
+
+	 <p>
+	 <?php
+	 // On affiche le contenu du billet
+	 echo nl2br(htmlspecialchars($donnees['contenu']));
+	 ?>
+	 <br />
+	 <em><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>">Commentaires</a></em>
+	 </p>
+</div>
+<?php
+} // Fin de la boucle des billets
+$req->closeCursor();
+?>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<img class="cm-img" src="images/uploads/cm-img.png" alt="">
