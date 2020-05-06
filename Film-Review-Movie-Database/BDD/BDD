@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 
 DROP TABLE IF EXISTS `commentaires`;
 CREATE TABLE IF NOT EXISTS `commentaires` (
-  `Note` varchar(255) NOT NULL,
+  `Avis` TEXT,
   `page` varchar(255) NOT NULL,
   `Nom` varchar(255) NOT NULL,
   `date` datetime DEFAULT NULL,

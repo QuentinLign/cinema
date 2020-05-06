@@ -135,10 +135,11 @@
 						</form>
 						<? // Récupération des commentaires et leur affichage
 
-									$bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', ''); //Connexion à la BDD
-								$req=$bdd->prepare('SELECT Nom and Note FROM commentaires WHERE page=: page ORDER BY date'); //Préparation de la table inscription avec les valeurs de la table
-								$req->execute(array('Nom'=>$Nom,'Note'=>$Note)); //Execution des requêtes
+								$bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', ''); //Connexion à la BDD
+								$req=$bdd->prepare('SELECT Nom and Avis FROM commentaires WHERE page="comingsoon" ORDER BY date'); //Préparation de la table inscription avec les valeurs de la table
+								$req->execute(array('Nom'=>$Nom,'Avis'=>$Avis)); //Execution des requêtes
 								$a = $req->fetch();
+
 						 ?>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
