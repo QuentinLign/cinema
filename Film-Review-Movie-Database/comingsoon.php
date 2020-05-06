@@ -130,7 +130,7 @@
 						<h3>Donnez votre Avis</h3>
 						<form action="../Film-Review-Movie-Database/commentaires/manager_commentaire.php" method="post">
 							<input class="email" id="nom" type="text" name="Avis" placeholder="Nom" required>
-							<input class="email" id="commentaire"name="Note" required type="text" placeholder="Avis">
+							<input class="email" id="commentaire" name="Note" required type="text" placeholder="Avis">
 							<input class="redbtn" id="envoi" type="submit" name="envoi" placeholder="envoi">
 						</form>
 						<? // Récupération des commentaires et leur affichage
