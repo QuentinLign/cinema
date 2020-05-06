@@ -136,8 +136,8 @@
 						<? // Récupération des commentaires et leur affichage
 
 									$bdd=new PDO('mysql:host=localhost;dbname=cinemapoo;charset=utf8', 'root', ''); //Connexion à la BDD
-								$req=$bdd->prepare('SELECT commentaires FROM liste_proprietaire, liste_disque WHERE ORDER BY liste_proprietaire.proprietaire ASC'); //Préparation de la table inscription avec les valeurs de la table
-								$req->execute(array('nom'=>$donnee->getnom(),'email'=>$donnee->getemail(), 'telephone'=>$donnee->gettelephone(), 'mdp'=>md5($donnee->getmdp()))); //Execution des requêtes
+								$req=$bdd->prepare('SELECT Nom and Note FROM commentaires WHERE page=: page ORDER BY date'); //Préparation de la table inscription avec les valeurs de la table
+								$req->execute(array('Nom'=>$Nom,'Note'=>$Note)); //Execution des requêtes
 								$a = $req->fetch();
 						 ?>
 					</div>
