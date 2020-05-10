@@ -1,6 +1,6 @@
 <?php
 
-require_once 'class/traitement_login.php';
+require_once 'class/traitement_login.php'; //lien vers le traitement de la connexion
 ?>
 <?php require 'inc/header.php'; ?>
 
@@ -24,7 +24,7 @@ require_once 'class/traitement_login.php';
             </label>
         </div>
 
-        <button type="submit" class="btn btn-primary">Se connecter</button>
+        <button type="submit" class="button">Se connecter</button><a href="http://localhost/Film-Review-Movie-Database/membre/admin/index.php?p=login" class="button1">Espace Admin </a>
 
     </form>
 
