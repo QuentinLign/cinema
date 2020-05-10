@@ -24,14 +24,14 @@ class Auth{
             $email,
             $token
         ]);
-        $user_id = $db->lastInsertId();
+        $user_id = $db->lastInsertId(); //Contenu du mail reçu par l'utilisateur pour son inscription et la validation de son compte
         mail($email, 'AMINE & QUENTIN SARL // Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://localhost/Film-Review-Movie-Database/membre/confirm.php?id=$user_id&token=$token");
     }
 
     public function confirm($db, $user_id, $token){
         $user = $db->query('SELECT * FROM users WHERE id = ?', [$user_id])->fetch();
         if($user && $user->confirmation_token == $token ){
-            $db->query('UPDATE users SET confirmation_token = NULL, confirmed_at = NOW() WHERE id = ?', [$user_id]);
+            $db->query('UPDATE users SET confirmation_token = NULL, confirmed_at = NOW() WHERE id = ?', [$user_id]); //Confirmation de son inscription
             $this->session->write('auth', $user);
             return true;
         }
