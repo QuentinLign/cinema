@@ -7,7 +7,7 @@ if(isset($_GET['id']) && isset($_GET['token'])){
     $user = $auth->checkResetToken($db, $_GET['id'], $_GET['token']);
     if($user){
         if(!empty($_POST)){
-		$db->query('UPDATE users SET password = ? WHERE id = ?', [$password, $user->id]);
+		$db->query('UPDATE users SET password = ? WHERE id = ?', [$password, $user->id]); //mettre à jour le mot de passe de l'utilisateur sur la BDD
 
             $validator = new Validator($_POST);
             $validator->isConfirmed('password');
