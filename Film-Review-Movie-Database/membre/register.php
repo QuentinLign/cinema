@@ -7,7 +7,7 @@ require_once 'class/traitement_register.php';
 <h1>S'inscrire</h1>
 
 <?php if(!empty($errors)): ?>
-<div class="alert alert-danger">
+<div class="alert alert-danger"> 
     <p>Vous n'avez pas rempli le formulaire correctement</p>
     <ul>
         <?php foreach($errors as $error): ?>
@@ -17,7 +17,7 @@ require_once 'class/traitement_register.php';
 </div>
 <?php endif; ?>
 
-<form action="" method="POST">
+<form action="" method="POST"> 
 
     <div class="form-group">
         <label for="">Pseudo</label>
