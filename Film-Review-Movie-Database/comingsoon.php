@@ -11,7 +11,7 @@
 <!-- comingsoon14:54-->
 <head>
 	<!-- Besoins basiques -->
-	<title>Bientôt disponible</title>
+	<title>Commentaires</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
